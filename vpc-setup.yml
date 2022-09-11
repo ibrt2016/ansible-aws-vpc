@@ -14,3 +14,14 @@
         tenancy: default
         state: "{{ state }}"
       register: vpcout
+    - name: Create Public Subnet 1 in Zone 1
+      amazon.aws.ec2_vpc_subnet:
+        state: "{{ state }}"
+        vpc_id: "{{ vpcout.vpc.id }}"
+        cidr: "{{ PubSub1Cidr }}"
+        region: "{{ region }}"
+        az: "{{ zone1 }}"
+        map_public : yes
+        resource_tags:
+          Name: vprofile-pubsub1
+      register: pubsub1_out
