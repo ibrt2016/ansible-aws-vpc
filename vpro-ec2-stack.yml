@@ -70,7 +70,7 @@
       ec2:
         key_name: vprokey
         region: "{{region}}"
-        instance_type: t2.micro
+        instance_type: t3.micro
         image: "{{nginx_ami}}"
         wait: yes
         wait_timeout: 300
@@ -91,7 +91,7 @@
       ec2:
         key_name: vprokey
         region: "{{region}}"
-        instance_type: t2.micro
+        instance_type: t3.micro
         image: "{{tomcat_ami}}"
         wait: yes
         wait_timeout: 300
@@ -112,7 +112,7 @@
       ec2:
         key_name: vprokey
         region: "{{region}}"
-        instance_type: t2.micro
+        instance_type: t3.micro
         image: "{{memcache_ami}}"
         wait: yes
         wait_timeout: 300
@@ -133,7 +133,7 @@
       ec2:
         key_name: vprokey
         region: "{{region}}"
-        instance_type: t2.micro
+        instance_type: t3.micro
         image: "{{rmq_ami}}"
         wait: yes
         wait_timeout: 300
@@ -154,7 +154,7 @@
       ec2:
         key_name: vprokey
         region: "{{region}}"
-        instance_type: t2.micro
+        instance_type: t3.micro
         image: "{{mysql_ami}}"
         wait: yes
         wait_timeout: 300
