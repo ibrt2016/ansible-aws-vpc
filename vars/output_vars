@@ -1,3 +1,4 @@
+region: us-east-1
 vpcid: vpc-01920e1f36c65123b
 pubsub1id: subnet-06d1a10fb702d475e
 pubsub2id: subnet-0fb978b71e3577349
@@ -10,3 +11,4 @@ pubRTid: rtb-03dcb0820318e8897
 NATGWid: nat-0ba159dcf60702c6a
 privRTid: rtb-0e1559ab9936616a4
 BastionSGid: sg-0174ecd62ca20db32
+
