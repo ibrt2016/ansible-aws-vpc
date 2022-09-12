@@ -32,9 +32,13 @@
       tags:
         - package
 
-    - apt_repository:
+    {# - apt_repository:
         repo: deb http://ppa.launchpad.net/rabbitmq/rabbitmq-erlang/ubuntu bionic main
         state: present
+      tags:
+        - package #}
+    - name: RMQ Rrepo
+      shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.deb.sh | sudo bash
       tags:
         - package
 
