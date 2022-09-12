@@ -33,7 +33,7 @@
         - package
 
     - apt_repository:
-        repo: deb 'https://dl.bintray.com/rabbitmq/debian bionic main'
+        repo: deb http://ppa.launchpad.net/rabbitmq/rabbitmq-erlang/ubuntu bionic main
         state: present
       tags:
         - package
